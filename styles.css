@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  height: 24vh;
+  width: 100%;
+  background: #24292E;
+}
+
+/*# sourceMappingURL=styles.css.map */
