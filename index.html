@@ -13,7 +13,7 @@
     <header>
       <nav class="navleft">
         <i class="fab fa-github"></i>
-        <input type="text" placeholder="Search or jump to..">
+        <input type="text" placeholder="Search or jump to...">
         <a>Pull requests</a>
         <a>Issues</a>
         <a>Marketplace</a>
@@ -51,59 +51,65 @@
           </aside>
 
 
-          <main class="col-md-8">
-              <nav class="row ">
-                <button type="button">Overview</button>
-                <button type="button">Repositories</button>
-                <button type="button">Projects</button>
-                <button type="button">Stars</button>
-                <button type="button">Followers</button>
-                <button type="button">Following</button>
+          <main class="col-md-9">
+              <nav id="navbar" class="row  no-gutters">
+                <a id="pagelinks" class="col-md-1">Overview</a>
+                <a id="pagelinks" class="col-md-2">Repositories</a>
+                <a id="pagelinks" class="col-md-1">Projects</a>
+                <a id="pagelinks" class="col-md-1">Stars</a>
+                <a id="pagelinks" class="col-md-2">Followers</a>
+                <a id="pagelink" class="col-md-5">Following</a>
               </nav>
-            <div class="row">
+
               <section id="searchbar" class="row no-gutters">
-                <div class="col-md-4">
+                <div class="col-md-7">
                   <input type="text" placeholder="Find a repository...">
                 </div>
                   <div id="dropdownone" class="col-2-md">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown button
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Type: All
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
                 </div>
-              </section>
-            </div>
-
-                <div id="dropdownone" class="col-2-md">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown button
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                <div id="dropdowntwo" class="col-2-md">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Language: All
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                   </div>
                 </div>
                 <div id="newbutton" class="col-2-md">
-                  <button type="button">New</button>
+                  <button type="button"><svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>New</button>
                 </div>
+              </section>
 
                 <section id="repository" class="row no-gutters">
-                  <a class="col-6-md"><p>2-4-1 Git-Hub Recreation</p></a>
-                  <button class="col-6-md" type="button"><i class="fas fa-star"></i>Star</button>
+                  <a href="#" class="col-md-10">2-4-1 github-recreation</a>
+                  <button class="col-md-2" type="button"><i class="fas fa-star"></i>Star</button>
                   <div class="row">
-                  <p class="col-md-6">HTML</p>
-                  <p class="col-md-6">Updated 16 Hours Ago</p>
+                    <p class="col-md-6">HTML</p>
+                    <p class="col-md-6">Updated 16 Hours Ago</p>
                   </div>
                 </section>
 
 
           </main>
         </section>
+
       </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
