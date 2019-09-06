@@ -4,45 +4,106 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Your Repositories</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
   </head>
   <body>
 
     <header>
-      <i class="fab fa-github"></i>
-      <input type="text" placeholder="Search..">
-      <button type="button">Pull requests</button>
-      <button type="button">Issues</button>
-      <button type="button">Marketplace</button>
-      <button type="button">Explore</button>
-      <i class="fas fa-bell"></i>
-      <i class="fas fa-plus"></i>
-      <i class="fas fa-plus"></i>
+      <nav class="navleft">
+        <i class="fab fa-github"></i>
+        <input type="text" placeholder="Search or jump to..">
+        <a>Pull requests</a>
+        <a>Issues</a>
+        <a>Marketplace</a>
+        <a>Explore</a>
+      </nav>
+      <nav class="navright">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-plus"></i><i class="fas fa-caret-down"></i>
+        <img src="images/avatar.jpeg" alt="Profile Picture"><i class="fas fa-caret-down"></i>
+      </nav>
     </header>
+
       <div class="container">
-        <aside class="row">
-          <div class="col-lg-2 col-md-4 col-12">
-          <img src="images/avatar.jpeg" alt="Profile Picture">
-          <div>
-          <i class="far fa-laugh"></i><p>Set Status</p>
-          </div>
-          <h1>Caleb Craigo</h1>
-          <h2>CalebCraigo</h2>
-          <button type="button">Edit Profile</button>
-          <svg class="octicon octicon-clock" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 8h3v2H7c-.55 0-1-.45-1-1V4h2v4zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
-          <p>Joined 10 days ago</p>
-          <p>Organizations</p>
-          <img src="images/python.png" alt="Groups">
-          <img src="images/python.png" alt="Groups">
-          </div>
-        </aside>
+        <section class="row">
+
+          <aside class="col-md-3">
+            <section class="col-lg-12 col-md-4">
+              <div class="picborder">
+                <img class="profilepic" src="images/avatar.jpeg" alt="Profile Picture">
+                <div class="statusicon">
+                  <i class="far fa-laugh"></i><p>Set Status</p>
+                </div>
+              </div>
+              <h1>Caleb Craigo</h1>
+              <h2>CalebCraigo</h2>
+              <button type="button">Edit Profile</button>
+                <svg class="octicon octicon-clock" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 8h3v2H7c-.55 0-1-.45-1-1V4h2v4zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
+                <p>Joined 10 days ago</p>
+              <div class="orgs">
+                <p>Organizations</p>
+                <img class="python" src="images/python.png" alt="Groups">
+                <img class="python" src="images/python.png" alt="Groups">
+              </div>
+            </section>
+          </aside>
 
 
-      <main class="row">
-        
+          <main class="col-md-8">
+              <nav class="row ">
+                <button type="button">Overview</button>
+                <button type="button">Repositories</button>
+                <button type="button">Projects</button>
+                <button type="button">Stars</button>
+                <button type="button">Followers</button>
+                <button type="button">Following</button>
+              </nav>
+            <div class="row">
+              <section id="searchbar" class="row no-gutters">
+                <div class="col-md-4">
+                  <input type="text" placeholder="Find a repository...">
+                </div>
+                  <div id="dropdownone" class="col-2-md">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </section>
+            </div>
 
-      </main>
-    </div>
+                <div id="dropdownone" class="col-2-md">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+                <div id="newbutton" class="col-2-md">
+                  <button type="button">New</button>
+                </div>
+
+                <section id="repository" class="row no-gutters">
+                  <a class="col-6-md"><p>2-4-1 Git-Hub Recreation</p></a>
+                  <button class="col-6-md" type="button"><i class="fas fa-star"></i>Star</button>
+                  <div class="row">
+                  <p class="col-md-6">HTML</p>
+                  <p class="col-md-6">Updated 16 Hours Ago</p>
+                  </div>
+                </section>
+
+
+          </main>
+        </section>
+      </div>
   </body>
 </html>
