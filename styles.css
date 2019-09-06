@@ -8,9 +8,109 @@ body {
 }
 
 header {
-  height: 24vh;
+  height: 63px;
   width: 100%;
   background: #24292E;
+}
+
+.navleft {
+  display: inline-block;
+  width: 70%;
+}
+
+.navright {
+  display: inline-block;
+  text-align: right;
+  width: 29%;
+  color: #fff;
+}
+
+.navleft i {
+  color: #fff;
+  font-size: 25pt;
+  margin: 1.2%;
+}
+
+.navleft input {
+  width: 30%;
+  background-color: #3F4448;
+  color: #8D9092;
+  border-radius: 2%;
+  border: none;
+}
+
+.navleft a {
+  border: none;
+  color: #fff !important;
+  background: #24292E;
+}
+
+.navleft a:hover {
+  color: #3F4448;
+}
+
+.navright img {
+  width: 5%;
+}
+
+.container {
+  margin-top: 1.5%;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 1280px;
+}
+
+aside .profilepic {
+  width: 270px;
+  height: 271px;
+}
+
+.picborder {
+  border: solid 1px gray;
+  width: 272px;
+}
+
+.statusicon i {
+  margin-left: 3%;
+  margin-top: 5%;
+}
+
+.statusicon p {
+  display: inline-block;
+  margin-bottom: 4.5%;
+  font-size: 8pt;
+  margin-left: 5%;
+}
+
+h1 {
+  font-size: 26px;
+  width: 271px;
+  padding-top: 15px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 0;
+  padding-bottom: 15px;
+}
+
+aside button {
+  width: 272px;
+}
+
+aside p {
+  display: inline-block;
+  margin-right: 37%;
+}
+
+.orgs p {
+  margin-right: 70%;
+}
+
+.orgs .python {
+  width: 13.09%;
 }
 
 /*# sourceMappingURL=styles.css.map */
