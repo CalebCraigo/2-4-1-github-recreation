@@ -21,8 +21,9 @@ header {
 .navright {
   display: inline-block;
   text-align: right;
-  width: 29%;
+  width: 28%;
   color: #fff;
+  margin-right: 1%;
 }
 
 .navleft i {
@@ -32,7 +33,7 @@ header {
 }
 
 .navleft input {
-  width: 30%;
+  width: 33.5%;
   background-color: #3F4448;
   color: #8D9092;
   border-radius: 2%;
@@ -107,6 +108,8 @@ aside p {
 
 .orgs {
   border-top: solid 1px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .orgs p {
@@ -121,8 +124,34 @@ aside p {
   text-align: center;
 }
 
+#navbar {
+  width: 70%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#navbar .repositories {
+  width: 17%;
+}
+
+#navbar .stars {
+  width: 10%;
+}
+
 #navbar a {
-  padding: 16px 8px;
+  width: 17%;
+}
+
+#navbar i {
+  color: #EDEDEE;
+  margin-left: 0.5%;
+  position: relative;
+}
+
+#navbar span {
+  position: absolute;
+  color: #565D66;
+  left: 3.9px;
 }
 
 #searchbar input {
@@ -131,32 +160,106 @@ aside p {
 }
 
 #searchbar {
+  display: flex;
+  border-top: solid 1px;
   border-bottom: solid 1px;
-  padding-bottom: 3%;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+#searchbar .col-md-7 {
+  display: inline-block;
+  margin-right: 4%;
+}
+
+.btn {
+  padding: 0.175rem 0.075rem;
 }
 
 #dropdownone button {
   width: 95px;
   height: 34px;
-  margin-left: 64%;
+  border-color: #F1F4F7;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
 }
 
 #dropdowntwo button {
   width: 127px;
   height: 34px;
-  margin-left: 55%;
+  border-color: #F1F4F7;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+}
+
+.dropdown i {
+  color: #727679;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.dropdown span {
+  color: #24292E;
+  font-size: 14px;
 }
 
 #newbutton button {
   height: 34px;
   width: 71.5px;
-  margin-left: 130%;
 }
 
 #repository {
   padding-top: 3%;
   padding-bottom: 1%;
   border-bottom: solid 1px;
+}
+
+.navleft a {
+  margin-left: 1%;
+}
+
+.dropdown-toggle::after {
+  color: #24292E;
+}
+
+#newbutton button {
+  background-color: #2FCC5D;
+  color: #fff;
+  border-radius: 8%;
+  background-image: linear-gradient(-180deg, #2FCC5D, #238D44 90%);
+}
+
+#newbutton svg {
+  color: #fff;
+  margin-bottom: 6%;
+  margin-right: 6%;
+}
+
+#repository a {
+  font-size: 23px;
+}
+
+#repository button {
+  margin-left: 9%;
+  display: inline-block;
+  height: 28px;
+  width: 64px;
+  border-radius: 6%;
+  font-size: 12px;
+}
+
+#repository p {
+  font-size: 12px;
+  margin-left: 3%;
+}
+
+#repository .row {
+  width: 50%;
+  margin-top: 1%;
+}
+
+#repository i {
+  padding-top: 0.7%;
+  font-size: 12px;
+  margin-left: 3%;
 }
 
 /*# sourceMappingURL=styles.css.map */
