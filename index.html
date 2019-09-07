@@ -20,8 +20,8 @@
         <a>Explore</a>
       </nav>
       <nav class="navright">
-        <i class="fas fa-bell"></i>
-        <i class="fas fa-plus"></i><i class="fas fa-caret-down"></i>
+        <i id="bell" class="fas fa-bell"></i>
+        <i class="fas fa-plus"></i><i id="down" class="fas fa-caret-down"></i>
         <img src="images/avatar.jpeg" alt="Profile Picture"><i class="fas fa-caret-down"></i>
       </nav>
     </header>
@@ -52,23 +52,23 @@
 
 
           <main class="col-md-9">
-              <nav id="navbar" class="row  no-gutters">
-                <a id="pagelinks" class="col-md-1">Overview</a>
-                <a id="pagelinks" class="col-md-2">Repositories</a>
-                <a id="pagelinks" class="col-md-1">Projects</a>
-                <a id="pagelinks" class="col-md-1">Stars</a>
-                <a id="pagelinks" class="col-md-2">Followers</a>
-                <a id="pagelink" class="col-md-5">Following</a>
+              <nav id="navbar" class="row justify-content-around no-gutters">
+                <a id="pagelinks" class="overview">Overview</a>
+                <a id="pagelinks" class="repositories">Repositories<i class="fas fa-circle"><span>0</span></i></a>
+                <a id="pagelinks" class="projects">Projects<i class="fas fa-circle"><span>0</span></i></a>
+                <a id="pagelinks" class="stars">Stars<i class="fas fa-circle"><span>0</span></i></a>
+                <a id="pagelinks" class="followers">Followers<i class="fas fa-circle"><span>0</span></i></a>
+                <a id="pagelink" class="following">Following<i class="fas fa-circle"><span>0</span></i></a>
               </nav>
 
-              <section id="searchbar" class="row no-gutters">
+              <section id="searchbar" class="row justify-content-around no-gutters">
                 <div class="col-md-7">
                   <input type="text" placeholder="Find a repository...">
                 </div>
                   <div id="dropdownone" class="col-2-md">
                     <div class="dropdown">
                       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Type: All
+                      <i>Type:</i><span> All</span>
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Action</a>
@@ -80,7 +80,7 @@
                 <div id="dropdowntwo" class="col-2-md">
                   <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Language: All
+                      <i>Language:</i><span> All</span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                       <a class="dropdown-item" href="#">Action</a>
@@ -90,16 +90,17 @@
                   </div>
                 </div>
                 <div id="newbutton" class="col-2-md">
-                  <button type="button"><svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>New</button>
+                  <button type="button"><svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill="#fff" fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>New</button>
                 </div>
               </section>
 
                 <section id="repository" class="row no-gutters">
                   <a href="#" class="col-md-10">2-4-1 github-recreation</a>
-                  <button class="col-md-2" type="button"><i class="fas fa-star"></i>Star</button>
+                  <button type="button"><i class="fas fa-star"></i>Star</button>
                   <div class="row">
-                    <p class="col-md-6">HTML</p>
-                    <p class="col-md-6">Updated 16 Hours Ago</p>
+                    <i class="fas fa-circle"></i>
+                    <p>HTML</p>
+                    <p>Updated 16 Hours Ago</p>
                   </div>
                 </section>
 
