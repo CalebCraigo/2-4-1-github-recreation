@@ -36,7 +36,7 @@ header {
   width: 33.5%;
   background-color: #3F4448;
   color: #8D9092;
-  border-radius: 2%;
+  border-radius: 3px;
   border: none;
 }
 
@@ -55,7 +55,7 @@ header {
 }
 
 .container {
-  margin-top: 1.5%;
+  margin-top: 24px;
   margin-left: 0px !important;
   margin-right: 0px !important;
   padding-left: 0px;
@@ -85,6 +85,13 @@ aside .profilepic {
   margin-left: 5%;
 }
 
+.editprofile {
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+  margin-bottom: 6.1%;
+  width: 272px;
+  border-radius: 3px;
+}
+
 h1 {
   font-size: 26px;
   width: 271px;
@@ -95,10 +102,6 @@ h2 {
   font-size: 20px;
   line-height: 0;
   padding-bottom: 15px;
-}
-
-aside button {
-  width: 272px;
 }
 
 aside p {
@@ -114,6 +117,7 @@ aside p {
 
 .orgs p {
   margin-right: 70%;
+  margin-bottom: 1.5%;
 }
 
 .orgs .python {
@@ -122,16 +126,18 @@ aside p {
 
 #pagelinks {
   text-align: center;
+  padding-bottom: 16px;
 }
 
 #navbar {
   width: 70%;
   margin-top: 16px;
-  margin-bottom: 16px;
+  cursor: pointer;
 }
 
 #navbar .repositories {
   width: 17%;
+  border-bottom: solid 3px #DE5E13;
 }
 
 #navbar .stars {
@@ -157,6 +163,8 @@ aside p {
 #searchbar input {
   width: 108.1%;
   height: 34px;
+  border-radius: 3px;
+  border: solid 1px;
 }
 
 #searchbar {
@@ -244,6 +252,7 @@ aside p {
   width: 64px;
   border-radius: 6%;
   font-size: 12px;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
 }
 
 #repository p {
@@ -260,6 +269,10 @@ aside p {
   padding-top: 0.7%;
   font-size: 12px;
   margin-left: 3%;
+}
+
+#navbutton:hover {
+  color: #727373 !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
