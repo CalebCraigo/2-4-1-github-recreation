@@ -21,7 +21,7 @@ $(document).ready(function() {
       client_secret: CLIENT_SECRET,
     }
   });
-
+console.log(request);
   // request.done(success);
 
   let profileAside = (res) => {
@@ -72,6 +72,28 @@ $(document).ready(function() {
   }
 
   orgs.done(orgIcons);
+
+  let navNums = $.ajax({
+    method: "GET",
+    url: `${BASE_URL}/${username}`,
+    dataType: "jsonp",
+    data: {
+      client_id: CLIENT_ID,
+      client_secret: CLIENT_SECRET,
+    }
+  });
+
+  let nums = (res) => {
+
+    let numsSRC = $("#nav").html();
+    let numsTemp = Handlebars.compile(numsSRC);
+    let numsContext = res.data;
+    let numsHtml = numsTemp(numsContext);
+    // console.log(numsContext);
+    $("#navbar").html(numsHtml);
+  }
+
+  navNums.done(nums);
 
   let reposData = $.ajax({
     method: "GET",
