@@ -37,15 +37,19 @@
                   <i class="far fa-laugh"></i><p>Set Status</p>
                 </div>
               </div>
-              <h1>Caleb Craigo</h1>
-              <h2>CalebCraigo</h2>
+              <section class="names">
+              <!-- <h1>Caleb Craigo</h1> -->
+              <!-- <h2>CalebCraigo</h2> -->
+              </section>
               <button class="editprofile" type="button">Edit Profile</button>
                 <svg class="octicon octicon-clock" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 8h3v2H7c-.55 0-1-.45-1-1V4h2v4zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
-                <p>Joined 10 days ago</p>
+                <section class="joined">
+                <!-- <p>Joined 10 days ago</p> -->
+              </section>
               <div class="orgs">
-                <p>Organizations</p>
-                <img class="python" src="images/python.png" alt="Groups">
-                <img class="python" src="images/python.png" alt="Groups">
+                <!-- <p>Organizations</p> -->
+                <!-- <a href="https://github.com/ccs-student-submissions"><img class="python" src="images/python.png" alt="Groups"></a>
+                <img class="python" src="images/python.png" alt="Groups"> -->
               </div>
             </section>
           </aside>
@@ -53,12 +57,12 @@
 
           <main class="col-md-9">
               <nav id="navbar" class="row justify-content-around no-gutters">
-                <a id="pagelinks" class="pagenav overview">Overview</a>
-                <a id="pagelinks" class="repositories">Repositories<i class="fas fa-circle"><span>0</span></i></a>
-                <a id="pagelinks" class="pagenav projects">Projects<i class="fas fa-circle"><span>0</span></i></a>
+                <!-- <a id="pagelinks" class="pagenav overview">Overview</a> -->
+                <!-- <a id="pagelinks" class="repositories">Repositories<i class="fas fa-circle"></i></a> -->
+                <!-- <a id="pagelinks" class="pagenav projects">Projects<i class="fas fa-circle"><span>0</span></i></a>
                 <a id="pagelinks" class="pagenav stars">Stars<i class="fas fa-circle"><span>0</span></i></a>
                 <a id="pagelinks" class="pagenav followers">Followers<i class="fas fa-circle"><span>0</span></i></a>
-                <a id="pagelink" class="pagenav following">Following<i class="fas fa-circle"><span>0</span></i></a>
+                <a id="pagelink" class="pagenav following">Following<i class="fas fa-circle"><span>0</span></i></a> -->
               </nav>
 
               <section id="searchbar" class="row justify-content-around no-gutters">
@@ -97,43 +101,6 @@
                   <button type="button"><svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill="#fff" fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>New</button>
                 </div>
               </section>
-
-                <section id="repository" class="row no-gutters">
-                  <a href="#" class="col-md-10">2-4-1 github-recreation</a>
-                  <button type="button"><i class="fas fa-star"></i>Star</button>
-                  <div class="row">
-                    <i class="fas fa-circle"></i>
-                    <p>HTML</p>
-                    <p>Updated 16 Hours Ago</p>
-                  </div>
-                </section>
-                <section id="repository" class="row no-gutters">
-                  <a href="#" class="col-md-10">2-4-1 github-recreation</a>
-                  <button type="button"><i class="fas fa-star"></i>Star</button>
-                  <div class="row">
-                    <i class="fas fa-circle"></i>
-                    <p>HTML</p>
-                    <p>Updated 16 Hours Ago</p>
-                  </div>
-                </section>
-                <section id="repository" class="row no-gutters">
-                  <a href="#" class="col-md-10">2-4-1 github-recreation</a>
-                  <button type="button"><i class="fas fa-star"></i>Star</button>
-                  <div class="row">
-                    <i class="fas fa-circle"></i>
-                    <p>HTML</p>
-                    <p>Updated 16 Hours Ago</p>
-                  </div>
-                </section>
-                <section id="repository" class="row no-gutters">
-                  <a href="#" class="col-md-10">2-4-1 github-recreation</a>
-                  <button type="button"><i class="fas fa-star"></i>Star</button>
-                  <div class="row">
-                    <i class="fas fa-circle"></i>
-                    <p>HTML</p>
-                    <p>Updated 16 Hours Ago</p>
-                  </div>
-                </section>
           </main>
         </section>
 
@@ -141,6 +108,45 @@
 
       <script id="profileImg" type="text/x-handlebars-template">
         <img class="profilepic" src={{avatar_url}} alt="Profile Picture">
+      </script>
+
+      <script id="names" type="text/x-handlebars-template">
+          <h1>{{name}}</h1>
+          <h2>{{login}}</h2>
+      </script>
+
+      <script id="joined" type="text/x-handlebars-template">
+          <relative-time>{{created_at}}</relative-time>
+      </script>
+
+      <script id="orgs" type="text/x-handlebars-template">
+        <p>Organizations</p>
+        {{#each orgs}}
+          <a href={{url}}><img class="python" src={{avatar_url}} alt="Organizations"></a>
+        {{/each}}
+      </script>
+
+      <script id="nav" type="text/x-handelbars-template">
+        <a id="pagelinks" class="pagenav overview">Overview</a>
+        <a id="pagelinks" class="repositories">Repositories<i class="fas fa-circle"><span>{{public_repos}}</span></i></a>
+        <a id="pagelinks" class="pagenav projects">Projects<i class="fas fa-circle"><span>{{public_gists}}</span></i></a>
+        <a id="pagelinks" class="pagenav stars">Stars<i class="fas fa-circle"><span>{{public_gists}}</span></i></a>
+        <a id="pagelinks" class="pagenav followers">Followers<i class="fas fa-circle"><span>{{followers}}</span></i></a>
+        <a id="pagelink" class="pagenav following">Following<i class="fas fa-circle"><span>{{following}}</span></i></a>
+      </script>
+
+      <script id="repos" type="text/x-handlebars-template">
+        {{#each reposData}}
+        <section id="repository" class="row no-gutters">
+          <a href="#" class="col-md-10">{{name}}</a>
+          <button type="button"><i class="fas fa-star"></i>Star</button>
+          <div class="row">
+            <i class="fas fa-circle"></i>
+            <p>{{language}}</p>
+            <p>{{pushed_at}}</p>
+          </div>
+        </section>
+        {{/each}}
       </script>
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
