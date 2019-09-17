@@ -255,7 +255,7 @@ aside p {
 }
 
 #repository a {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 #repository button {
@@ -289,6 +289,28 @@ aside p {
 
 .pagenav:hover {
   border-bottom: solid 1.5px #727373;
+}
+
+@media (max-width: 800px) {
+  .navleft .buttonsleft {
+    display: none;
+  }
+
+  .navleft input {
+    display: none;
+  }
+
+  .navright .buttonsright {
+    display: none;
+  }
+
+  .navright img {
+    display: none;
+  }
+
+  .catbutton {
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
